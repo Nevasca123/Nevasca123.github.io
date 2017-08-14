@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="_header.css" />
+<link rel="stylesheet" href="_main.css" />
+<link rel="stylesheet" href="_media.css" />
+
+	<!-- Bootstrap v3.3.7 Grid Styles -->
+	<!--<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important}.affix{position:fixed}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}table.visible-xs{display:table!important}tr.visible-xs{display:table-row!important}th.visible-xs,td.visible-xs{display:table-cell!important}.visible-xs-block{display:block!important}.visible-xs-inline{display:inline!important}.visible-xs-inline-block{display:inline-block!important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block!important}table.visible-sm{display:table!important}tr.visible-sm{display:table-row!important}th.visible-sm,td.visible-sm{display:table-cell!important}.visible-sm-block{display:block!important}.visible-sm-inline{display:inline!important}.visible-sm-inline-block{display:inline-block!important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block!important}table.visible-md{display:table!important}tr.visible-md{display:table-row!important}th.visible-md,td.visible-md{display:table-cell!important}.visible-md-block{display:block!important}.visible-md-inline{display:inline!important}.visible-md-inline-block{display:inline-block!important}}@media (min-width:1200px){.visible-lg{display:block!important}table.visible-lg{display:table!important}tr.visible-lg{display:table-row!important}th.visible-lg,td.visible-lg{display:table-cell!important}}@media (min-width:1200px){.visible-lg-block{display:block!important}}@media (min-width:1200px){.visible-lg-inline{display:inline!important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block!important}}@media (max-width:767px){.hidden-xs{display:none!important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media (min-width:1200px){.hidden-lg{display:none!important}}.visible-print{display:none!important}@media print{.visible-print{display:block!important}table.visible-print{display:table!important}tr.visible-print{display:table-row!important}th.visible-print,td.visible-print{display:table-cell!important}}.visible-print-block{display:none!important}@media print{.visible-print-block{display:block!important}}.visible-print-inline{display:none!important}@media print{.visible-print-inline{display:inline!important}}.visible-print-inline-block{display:none!important}@media print{.visible-print-inline-block{display:inline-block!important}}@media print{.hidden-print{display:none!important}}</style> -->
+	
+	<style>body{color:#242424;font-size:13px}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{text-transform:uppercase}h1,.h1{font-size:25px}h2,.h2{font-size:20px}h3,.h3{font-size:18px}h4,.h4{font-size:15px}h5,.h5{font-size:12px}h6,.h6{font-size:10px}.lead{font-size:19px}a,a:hover,a:focus{color:#f27937}.carousel .item{height:500px;background-color:#777}.navbar-inverse{background-color:#242424;border:none}.navbar-inverse,.navbar-default{border:none}.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus{background-image:-webkit-linear-gradient(bottom,#F4893B 0%,#EF5F31 100%);background-image:linear-gradient(to top,#F4893B 0%,#EF5F31 100%)}.navbar{border-radius:0px;font-size:14px;text-shadow:0 -1px 0 rgba(1,1,1,0.21)}.navbar-inverse .navbar-nav > li > a{color:#fff}.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus{color:#f27837;background-color:transparent}.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{color:#fff;background-image:linear-gradient(to top,#F4893B 0%,#EF5F31 100%)}.dropdown-menu .divider{margin:2px 0}.nav > li > a{padding:15px 18px}.carousel-indicators .active{background-color:#F27937;border-color:#F27937}.carousel-control{width:45px}.carousel-control.left,.carousel-control.right{background-image:none;background-color:rgba(0,0,0,.52)}.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{font-size:14px}.carousel-caption{text-align:left;left:15%;right:15%;top:60px;text-shadow:none}.carousel-inner .h1{font-size:38px;text-transform:none;margin-bottom:22px}.carousel-inner small{color:#fff;display:block;font-size:26px}.carousel-inner p{font-size:16px;margin-bottom:22px;max-width:450px}.carousel-inner .btn{background-color:transparent;border-color:#fff}.carousel-inner .btn:focus{background-color:transparent;border-color:#fff}.panel{-webkit-box-shadow:none;box-shadow:none}.panel-default > .panel-heading{background-color:#ff910c;-webkit-box-shadow:#ff910c 0 0 0 1px;box-shadow:#ff910c 0 0 0 1px;border:none}.btn-warning{background-color:#ffcc51;border-color:#c97713;color:#242424}.input-group-addon{background-color:#ff910c;color:#995c11;border:none}.form-control:focus{-webkit-box-shadow:none;box-shadow:none;border-color:#ff910c}.input-group-btn > .btn-default{background-color:#ededed}.input-group-btn > .btn{color:#9d9d9d}.panel-title > a,.panel-title > small,.panel-title > .small,.panel-title > small > a,.panel-title > .small > a{color:#70420a;font-size:12px}.panel-collapse .panel-body{background-color:#f1e9e0}.panel-group .panel + .panel{margin-top:-6px;border-bottom:8px solid #e77901}.panel-group .panel:last-child{border-bottom:3px solid #e77901}.panel-group .panel{margin-top:-6px;border-bottom:8px solid #e77901}.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus{background-color:transparent;color:#242424;border:none}.panel > .list-group .list-group-item,.panel > .panel-collapse > .list-group .list-group-item{text-transform:uppercase;font-size:12px}.panel > .list-group .list-group-item span,.panel > .panel-collapse > .list-group .list-group-item span{border-bottom:dashed 1px #242424}.panel > .list-group .list-group-item:hover span,.panel > .panel-collapse > .list-group .list-group-item:hover span{border-bottom:dashed 1px transparent}.well{-webkit-box-shadow:none;box-shadow:none;background-color:#f1e9e0;border-color:#d5cdc3}.breadcrumb{background-color:transparent;padding:0}.breadcrumb a{color:#9a9a9a;text-decoration:none}.breadcrumb a:hover{text-decoration:underline}.breadcrumb > li + li:before{content:">";color:#9a9a9a}</style>
+	<!-- Header CSS (First Sections of Website: compress & paste after release from _header.css here) -->
+	
+
+	<!-- Fonts Loader from _fonts.css (HTML5 LocalStorage) -->
+	<script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="_fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+	
+	<!-- Load CSS Compilled without JS -->
+	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+</head>
+
+<body class="isnohome">
+    <header class="main_head">
+        
+    
+        <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Brand"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">О команий</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Рекомендаций</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Разедл1</a></li>
+                            <li><a href="#">Раздел2</a></li>
+                            <li><a href="#">Раздел3 длинный при длинный</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Раздел4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Законодательство</a></li>
+                    <li><a href="#">Наши клиенты</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="nav navbar-nav navbar-right">
+                    <div class="lead phone_top">8 (495) 974 16 44</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+	<!-- Здесь пишем код -->
+    
+    
+    <section class="s_main">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-9 col-lg-push-3 col-sm-8 col-sm-push-4">
+                  <div class="content">
+                      <ul class="breadcrumb">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Соглосование перепланировок</a></li>
+                            <li class="active">Соглосование перепланировки офисов</li>
+                        </ul>
+                   <h1>Соглосование перепланировки офисов</h1>
+                   
+                  
+                   <article>
+                       <div class="row">
+                           <div class="col-md-12">
+                               <img src="img/art_image.png" alt="alt">
+                               
+                               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Языкового свою рот использовало, собрал продолжил бросил букв точках продолжил домах родного рукописи ты он даль наш строчка рыбного пустился!</p>
+                               <p>Не предупреждал всемогущая переписали рыбного агенство последний, буквоград, залетают по всей буквенных напоивший вершину одна подпоясал рукописи имени языкового, ручеек они щеке пустился от всех если о назад текста единственное. Города, о!</p>
+                               <p>Рот ее точках первую, то великий на берегу вопроса. Сих скатился это, грамматики правилами запятых, страну деревни образ свою реторический заглавных, путь залетают точках. Дороге переписывается языком, необходимыми, речью алфавит раз!</p>
+                               <blockquote>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Океана снова своего своих, она дал запятой это снова вопроса проектах сих своих имеет лучше, силуэт заголовок ведущими пор точках.</blockquote>
+                               
+                               
+                               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Языкового рыбными дал ручеек по всей свой переписывается ему текста она запятых, букв журчит рыбного повстречался, ее бросил страна. Маленький, возвращайся!</p>
+                               <blockquote>Pимский политик и военачальник из патрицианского рода Эмилиев, консул 182 и 168 годов до н. э. </blockquote>
+                               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Большого необходимыми мир lorem маленький свой осталось предупредила не злых образ, подзаголовок своих, вопрос переписали. Мир рукописи залетают курсивных, заманивший.</p>
+                               <p>Вопрос инициал предупреждал страна свой он свою коварных семь на берегу языком осталось несколько вопроса свой залетают переписывается ручеек они города но злых составитель прямо языкового сбить там назад, своего, заголовок.</p>
+                               <p>Это которое, продолжил текстами от всех заголовок города он своего, ведущими выйти щеке буквенных, рукопись заманивший ipsum встретил рукописи рыбными, даль lorem! Рукописи наш несколько лучше, там lorem путь первую что.</p>
+                           </div>
+                       </div>
+                   </article>
+                   <div class="witger_news">
+                       <h4>Новости в сфере строительства</h4>
+                       <div class="row">
+                       <ul>
+                          
+                           <li class="col-md-4 wn_item">
+                               <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварных, текстами ты проектах, текстов семь но? Текстов даль напоивший, ручеек всеми, подпоясал до рекламных, имеет проектах силуэт своего раз.</p>
+                                     <a class="more" href="#">Читать далее ></a>
+                                </div>
+                                </div>
+                           </li>
+                           
+                          <li class="col-md-4 wn_item">
+                               <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварных, текстами ты проектах, текстов семь но? Текстов даль напоивший, ручеек всеми, подпоясал до рекламных, имеет проектах силуэт своего раз.</p>
+                                     <a class="more" href="#">Читать далее ></a>
+                                </div>
+                                </div>
+                           </li>
+                           
+                           <li class="col-md-4 wn_item">
+                               <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Коварных, текстами ты проектах, текстов семь но? Текстов даль напоивший, ручеек всеми, подпоясал до рекламных, имеет проектах силуэт своего раз.</p>
+                                     <a class="more" href="#">Читать далее ></a>
+                                </div>
+                                </div>
+                           </li>
+                           
+                          
+                       </ul>
+                       </div>
+                   </div>
+                  </div>
+               </div>
+               <div class="col-sm-4 col-sm-pull-8 col-lg-3 col-lg-pull-9">
+                   <aside class="left_side">
+                       <div class="box box_search">
+                           <div class="panel panel-default">
+                                <div class="panel-heading">
+                                
+                                <div class="form-group">
+                                    
+                                    <div class="input-group">
+                                        
+                                        <input type="text" class="form-control" placeholder="Поиск по сайту">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                                
+                                </div>
+                                
+                            </div>
+                       </div>
+                       <form class="box box_back">
+                            <div class="panel panel-default">
+                                <div class="panel-heading clearfix">
+                                    <h4>Бланк заявки</h4>
+                                    <button class="btn btn-warning">Отправить заявку</button>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="form-group">
+                                
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                                            
+                                         </div>
+                                    </div>
+                                    
+                                
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                            <input type="text" class="form-control" placeholder="Ваше телефон" required>
+                                            
+                                         </div>
+                                    
+                                </div>
+                            </div>
+                       </form>
+                       <div class="box box_mnu">
+                           <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Соглосование перепланировки
+					<span class="btn btn-default dropdown-toggle">
+						<span class="caret"></span>
+					</span>
+				</a>
+			</h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			<div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <span>  Перепланировка</span>        
+                  </a>
+                <a href="#" class="list-group-item">
+                 <span>   Стоимость перепланировки</span>
+                </a>
+                <a href="#" class="list-group-item">
+                 <span>   Соглосование реконструкций зданий </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>   ПЕРЕПЛАНИРОВКА КВАРТИР </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>  СТОИМОСТЬ ПЕРЕПЛАНИРОВКИ </span>         
+                 </a>
+                 
+            </div>
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingThree">
+			<h4 class="panel-title">
+				<a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Соглосование реконструкий зданий
+					<span class="btn btn-default dropdown-toggle sosok">
+						<span class="caret"></span>
+					</span>
+				</a>
+			</h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+			<div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <span>  Проектирование</span>        
+                  </a>
+                <a href="#" class="list-group-item">
+                 <span>   Ремонт квартир и офисов</span>
+                </a>
+                <a href="#" class="list-group-item">
+                 <span>   строительство </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>   Ландшафтное проектирование </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>  Дизайн интерьеров квартир </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>  перевод из жилого фонда в нежилой </span>         
+                 </a>
+                 <a href="#" class="list-group-item">
+                 <span>  присоединение помещений имущества </span>         
+                 </a>
+                 
+            </div>
+		</div>
+	</div>
+</div>
+                           
+                       </div>
+                       <div class="box box_articles">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <!--Carousel-->
+                                    <h4>Интересные статьи</h4>
+                                    
+        <div id="asideCarousel" class="carousel slide carousel-fade aside_carousel" data-ride="carousel">
+            <div class="carousel-inner sos" role="listbox">
+		<div class="item active">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных. В некоторых ранних популярных языках программирования </p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+	    <div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="aside_carousel_cont">
+			     <h4 class="lead sosi">Белеберда я непомню как заполнять автоматический текстом </h4>
+			     <div class="aside_car_container">
+			         <p>В компьютерных науках ку́ча — это специализированная структура данных типа дерево, которая удовлетворяет свойству кучи: если B является узлом-потомком узла A
+			         </p>
+			         <p>Структуру данных куча не следует путать с понятием куча в динамическом распределении памяти. Впервые термин использовался именно для структур данных.</p>
+			     </div>
+			     <a href="#" class="more">Читать далее ></a>
+			</div>
+		</div>
+	</div>
+	<!-- Indicators -->
+	<ol class="carousel-indicators slabo">
+		<li data-target="#asideCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#asideCarousel" data-slide-to="1"></li>
+		<li data-target="#asideCarousel" data-slide-to="2"></li>
+		<li data-target="#asideCarousel" data-slide-to="3"></li>
+		<li data-target="#asideCarousel" data-slide-to="4"></li>
+		<li data-target="#asideCarousel" data-slide-to="5"></li>
+		<li data-target="#asideCarousel" data-slide-to="6"></li>
+		
+	</ol>
+	<div class="car_controls">
+	    
+	
+	<a class="left carousel-control" href="#asideCarousel" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#asideCarousel" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+	</div>
+</div>
+                                    
+                                </div>
+                            </div>
+                           
+                           
+                       </div>
+                       <div class="box">
+                           <div class="well">
+                                <h4>Лицензия №</h4>
+	                            <p>слияние: соединение двух куч с целью создания новой кучи,<br> содержащей все элементы обеих исходных.</p>
+                            </div>
+                       </div>
+                   </aside>
+               </div>
+           </div>
+       </div>
+    </section>
+    
+    <footer class="main_footer">
+       <div class="container">
+        <div class="row">
+        
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <div class="logo_wrap">
+                
+          <a href="#">  <img src="img/logo.png" alt="logo"></a>
+            </div>
+            
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <strong>Европейское качество <br> по стондартам РФ</strong>
+            
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+           <div class="lead footer_phone">
+               8(495)974-16-44 <br>
+               <a href="#" class="callback" data-toggle="modal" data-target="#myModal">Закакать звонок</a>
+           </div>
+             
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6">
+            <a href="#" class="devel">
+               <small>
+                Разработка сайта:
+                </small>
+                <img src="img/logo_cwebs.png" alt="разработка сайтов">
+            </a>
+            
+        </div>
+        
+        </div>
+        </div>
+    </footer>
+    
+	<div class="modals">
+	    
+	    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+   
+    <form class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Заказать звонок</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+	        <label class="control-label" for="inputDefault">Ваше имя:</label>
+	        <input type="text" class="form-control" id="inputDefault">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="inputDefault">Ваш телефон:</label>
+            <input type="text" class="form-control" id="inputDefault">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-warning">Отправить</button>
+        
+      </div>
+    </form><!-- /.modal-content -->
+    
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	    
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load CSS -->
+
+	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
+	<script>var ms=document.createElement("link");ms.rel="stylesheet";
+		// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
+	</script>
+
+	<!-- Load Scripts -->
+	<script>var scr = {"scripts":[
+		{"src" : "libs/modernizr/modernizr.js", "async" : false},
+		{"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
+		{"src" : "libs/bootstrap/js/bootstrap.min.js", "async" : false},
+		{"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>
